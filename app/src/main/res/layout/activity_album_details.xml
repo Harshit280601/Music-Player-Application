@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".AlbumDetails">
+
+    <ImageView
+        android:id="@+id/albumPhoto"
+        android:layout_width="match_parent"
+        android:src="@drawable/song_icon"
+        android:scaleType="centerCrop"
+        android:layout_height="300dp" />
+
+    <ImageView
+        android:id="@+id/gradient"
+        android:layout_width="match_parent"
+        android:src="@drawable/gradient_bg"
+        android:layout_height="300dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"
+        android:layout_below="@+id/albumPhoto"/>
+
+</RelativeLayout>
